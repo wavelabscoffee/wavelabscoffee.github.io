@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>웨이브랩스 37F 저녁 대관</title>
+<meta name="description" content="광교 SK뷰레이크타워 37층 단독 대관 · 수요일 저녁 3시간 90,000원 · 일요일 저녁 3시간 120,000원 · 최대 30명">
+<meta property="og:type" content="website">
+<meta property="og:title" content="웨이브랩스 37F 저녁 단독 대관">
+<meta property="og:description" content="수요일 저녁 3시간 90,000원 · 일요일 저녁 3시간 120,000원 · 최대 30명">
+<meta property="og:image" content="https://wavelabscoffee.github.io/rental/hero.jpg">
+<meta property="og:url" content="https://wavelabscoffee.github.io/rental/">
+<link rel="icon" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../icon-180.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{--brand:#20769B;--brand2:#0B5F84;--bg:#F4F6F8;--card:#fff;--ink:#15212B;--dim:#63737F;--line:#E4E9ED;--head:#EDEFF2;--off-ink:rgba(21,33,43,.38);--bad-ink:#C0392B;--shade:rgba(21,33,43,.45);--pad:16px;--wrap:640px}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;-webkit-text-size-adjust:100%}
+  button,input,textarea{font-family:inherit}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:16px var(--pad) 48px}
+  .top{display:flex;align-items:center;gap:12px;margin:4px 0 24px}
+  .top img{width:40px;height:40px;border-radius:10px}
+  .top b{display:block;font-size:16px;font-weight:800}
+  .top span{display:block;font-size:12.5px;color:var(--dim);margin-top:2px}
+  h1{font-size:26px;line-height:1.3;margin:0 0 8px;font-weight:800;letter-spacing:-.3px}
+  .sub{font-size:15px;color:var(--dim);margin:0 0 20px;line-height:1.5}
+  .slots{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:520px){.slots{grid-template-columns:1fr 1fr}}
+  .slot{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 16px 16px;display:flex;flex-direction:column}
+  .slot .day{font-size:16px;font-weight:800;color:var(--brand2)}
+  .slot .when{font-size:13px;color:var(--dim);margin-top:4px}
+  .slot .price{font-size:30px;font-weight:800;margin:16px 0 4px;letter-spacing:-.5px}
+  .slot .price small{font-size:15px;font-weight:700;color:var(--dim);margin-right:8px;letter-spacing:0}
+  .slot .more{font-size:13.5px;color:var(--dim);margin-bottom:16px;line-height:1.5;flex:1}
+  .btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;border-radius:12px;border:0;background:var(--brand);color:var(--card);font-size:16px;font-weight:700;cursor:pointer;touch-action:manipulation;text-decoration:none}
+  .btn.ghost{background:var(--card);color:var(--brand2);border:1px solid var(--line);margin-top:8px}
+  .note{font-size:13px;color:var(--dim);margin:12px 2px 0;line-height:1.5}
+  .photos{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;margin:24px calc(-1 * var(--pad)) 0;padding:0 var(--pad);-webkit-overflow-scrolling:touch}
+  .photos img{height:220px;width:auto;border-radius:14px;flex:none;scroll-snap-align:start;object-fit:cover;background:var(--head)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 16px;margin-top:24px}
+  .card h2{font-size:18px;margin:0 0 16px;font-weight:800}
+  .field{margin-bottom:20px}
+  .lab{display:block;font-size:13.5px;font-weight:700;color:var(--dim);margin-bottom:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{min-height:40px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:14.5px;font-weight:600;cursor:pointer;touch-action:manipulation}
+  .chip.on{background:var(--brand);border-color:var(--brand);color:var(--card)}
+  .chip:disabled{background:var(--head);color:var(--off-ink);cursor:default}
+  .seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .seg .chip{min-height:44px;font-size:15px}
+  input[type=text],textarea{display:block;width:100%;font-size:16px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+  textarea{min-height:84px;resize:vertical}
+  .step{display:flex;align-items:center;gap:12px}
+  .step button{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:20px;font-weight:700;cursor:pointer;touch-action:manipulation}
+  .step output{min-width:64px;text-align:center;font-size:18px;font-weight:800}
+  .sum{background:var(--head);border-radius:12px;padding:16px;margin:4px 0 16px}
+  .sum .l1{font-size:14.5px;font-weight:700;line-height:1.5}
+  .sum .l2{font-size:24px;font-weight:800;margin-top:6px;letter-spacing:-.3px}
+  .sum .l3{font-size:12.5px;color:var(--dim);margin-top:4px;line-height:1.5}
+  .agree{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;margin:0 0 12px;cursor:pointer}
+  .agree input{width:20px;height:20px;margin:1px 0 0;flex:none;accent-color:var(--brand)}
+  .err{color:var(--bad-ink);font-size:13px;min-height:18px;margin:0 0 8px}
+  .small{font-size:12.5px;color:var(--dim);text-align:center;margin:10px 0 0;line-height:1.5}
+  .info{margin:0;padding:0;list-style:none}
+  .info li{font-size:14.5px;line-height:1.5;padding:12px 0;border-bottom:1px solid var(--line)}
+  .info li:first-child{padding-top:0}
+  .info li:last-child{border-bottom:0;padding-bottom:0}
+  footer{font-size:12.5px;color:var(--dim);text-align:center;margin-top:28px;line-height:1.6}
+  .modal{position:fixed;inset:0;background:var(--shade);display:none;align-items:flex-end;justify-content:center;padding:16px;z-index:10}
+  .modal.show{display:flex}
+  .sheet{background:var(--card);border-radius:16px;padding:20px 16px;width:100%;max-width:520px}
+  .sheet h3{font-size:18px;margin:0 0 8px;font-weight:800}
+  .sheet p{font-size:14.5px;color:var(--dim);margin:0 0 12px;line-height:1.5}
+  .sheet textarea{min-height:170px;font-size:14.5px;background:var(--bg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><img src="../icon-180.png" alt=""><div><b>웨이브랩스 37F</b><span>광교 SK뷰레이크타워 37층</span></div></div>
+
+  <h1>37층 저녁 단독 대관</h1>
+  <p class="sub">광교호수 야경을 보며 매장 전체를 한 팀만 · 최대 30명</p>
+
+  <div class="slots">
+    <div class="slot">
+      <div class="day">수요일 저녁</div>
+      <div class="when">18:00부터</div>
+      <div class="price"><small>3시간</small>90,000원</div>
+      <div class="more">2시간 60,000원 · 1시간 추가 30,000원</div>
+      <button class="btn" type="button" data-pick="wed">수요일로 예약하기</button>
+    </div>
+    <div class="slot">
+      <div class="day">일요일 저녁</div>
+      <div class="when">20:00부터</div>
+      <div class="price"><small>3시간</small>120,000원</div>
+      <div class="more">2시간 80,000원 · 1시간 추가 40,000원</div>
+      <button class="btn" type="button" data-pick="sun">일요일로 예약하기</button>
+    </div>
+  </div>
+  <p class="note">음료는 1인 1잔 주문(메뉴 가격) · 결제는 당일 매장에서</p>
+
+  <div class="photos">
+    <img src="hero.jpg" alt="창가 테이블과 해 질 녘 광교호수" loading="lazy">
+    <img src="room.jpg" alt="매장 전체 좌석" loading="lazy">
+    <img src="night.jpg" alt="밤의 창가 자리" loading="lazy">
+  </div>
+
+  <div class="card" id="book">
+    <h2>예약 신청</h2>
+    <div class="field"><span class="lab">요일</span><div class="seg" id="segSlot"></div></div>
+    <div class="field"><span class="lab">날짜</span><div class="chips" id="dateChips"></div></div>
+    <div class="field" id="startField"><span class="lab">시작 시간</span><div class="chips" id="startChips"></div></div>
+    <div class="field"><span class="lab">이용 시간</span><div class="chips" id="hourChips"></div></div>
+    <div class="field"><span class="lab">인원</span>
+      <div class="step"><button type="button" id="pMinus" aria-label="한 명 줄이기">−</button><output id="pOut">10명</output><button type="button" id="pPlus" aria-label="한 명 늘리기">+</button></div>
+    </div>
+    <div class="field"><span class="lab">모임 종류 (선택)</span><div class="chips" id="kindChips"></div></div>
+    <div class="field"><label class="lab" for="nm">이름 (또는 모임 이름)</label><input type="text" id="nm" maxlength="20" autocomplete="name" placeholder="예) 김웨이브"></div>
+    <div class="field"><label class="lab" for="memo">요청 사항 (선택)</label><textarea id="memo" maxlength="300" placeholder="예) 생일 모임이에요, 창가 쪽 자리로 부탁드려요"></textarea></div>
+
+    <div class="sum"><div class="l1" id="sum1">날짜를 골라 주세요</div><div class="l2" id="sum2"></div><div class="l3">음료 1인 1잔 별도(메뉴 가격) · 결제는 당일 매장에서</div></div>
+    <label class="agree"><input type="checkbox" id="agree"><span>음료 1인 1잔 주문 · 외부 음식·음료 반입 불가에 동의해요</span></label>
+    <div class="err" id="err" role="alert"></div>
+    <button class="btn" type="button" id="go">문자로 예약 신청하기</button>
+    <a class="btn ghost" href="tel:01084068985">전화 문의 010-8406-8985</a>
+    <p class="small">문자를 보내 주시면 확인 후 확정 문자를 드려요</p>
+  </div>
+
+  <div class="card">
+    <h2>이용 안내</h2>
+    <ul class="info">
+      <li>매장 전체 단독 이용 · 최대 30명</li>
+      <li>음료 1인 1잔 주문(메뉴 가격) · 외부 음식·음료 반입 불가</li>
+      <li>주차 2시간 무료 (건물 내 다른 상가에서 등록하신 경우 최대 1시간만 추가 가능)</li>
+      <li>예약 변경·취소는 이용 전날까지 문자로 알려 주세요</li>
+      <li>광교 SK뷰레이크타워 A동 37층 3715호 (수원시 영통구 법조로 25)</li>
+    </ul>
+  </div>
+
+  <footer>웨이브랩스 37F · 010-8406-8985</footer>
+  <noscript><p class="note">예약은 010-8406-8985로 문자 주세요</p></noscript>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="sheet">
+    <h3 id="mTitle">이 내용으로 문자 보내 주세요</h3>
+    <p id="mDesc">010-8406-8985로 보내 주시면 확인 후 확정 문자를 드려요</p>
+    <textarea id="mText" readonly></textarea>
+    <button class="btn" type="button" id="mCopy" style="margin-top:12px">내용 복사</button>
+    <button class="btn ghost" type="button" id="mClose">닫기</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var SB='https://gsnsroacvbibljpecizu.supabase.co/rest/v1/records';
+  var KEY='sb_publishable_eCxa1FC6BIp3L0FJwI9x5w_I-4LQ-hw';
+  var TEL='01084068985', TEL_SHOW='010-8406-8985';
+  var DOW=['일','월','화','수','목','금','토'];
+  // 요금(2시간 · 3시간 · 1시간 추가) · 시작 가능 시각 · 끝나는 시각 상한(24 = 자정)
+  var SLOT={
+    wed:{name:'수요일 저녁',dow:3,starts:[18,19,20],last:23,p2:60000,p3:90000,ex:30000},
+    sun:{name:'일요일 저녁',dow:0,starts:[20],last:24,p2:80000,p3:120000,ex:40000}
+  };
+  var KINDS=['생일·파티','친목 모임','소개팅·로테이션','회의·워크숍','촬영','기타'];
+  var q=new URLSearchParams(location.search);
+  var SRC=(q.get('s')||'대관페이지').slice(0,40), TEST=q.get('t')==='1';
+  var st={slot:'wed',date:'',start:18,hours:3,people:10,kind:'',busy:{},closed:{}};
+  var $=function(id){return document.getElementById(id)};
+
+  function won(n){return n.toLocaleString('ko-KR')+'원'}
+  function price(s,h){var c=SLOT[s];return h<=2?c.p2:c.p3+(h-3)*c.ex}
+  function hh(h){return (h<10?'0':'')+h+':00'}
+  function today(){var d=new Date(Date.now()+9*36e5);return new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),d.getUTCDate()))}
+  function iso(d){return d.toISOString().slice(0,10)}
+  function lab(d){return (d.getUTCMonth()+1)+'/'+d.getUTCDate()+'('+DOW[d.getUTCDay()]+')'}
+  function fromIso(s){var p=s.split('-');return new Date(Date.UTC(+p[0],+p[1]-1,+p[2]))}
+  function dates(s){
+    var out=[],d=today(),c=SLOT[s];
+    d.setUTCDate(d.getUTCDate()+1);               // 내일부터
+    for(var i=0;i<120&&out.length<8;i++){
+      if(d.getUTCDay()===c.dow&&!st.closed[iso(d)]) out.push(new Date(d.getTime()));
+      d.setUTCDate(d.getUTCDate()+1);
+    }
+    return out;
+  }
+  function log(data){
+    if(TEST) return;
+    try{
+      fetch(SB,{method:'POST',keepalive:true,
+        headers:{apikey:KEY,'Content-Type':'application/json',Prefer:'return=minimal'},
+        body:JSON.stringify({id:'qr-'+Date.now()+'-'+Math.random().toString(36).slice(2,7),kind:'qr',data:data})}).catch(function(){});
+    }catch(e){}
+  }
+  function chip(text,on,dis,fn){
+    var b=document.createElement('button');b.type='button';b.className='chip'+(on?' on':'');
+    b.textContent=text;b.disabled=!!dis;b.setAttribute('aria-pressed',on?'true':'false');
+    if(!dis) b.addEventListener('click',fn);
+    return b;
+  }
+  function fill(el,nodes){el.innerHTML='';nodes.forEach(function(n){el.appendChild(n)})}
+  function maxH(){return SLOT[st.slot].last-st.start}
+
+  function render(){
+    var c=SLOT[st.slot];
+    fill($('segSlot'),['wed','sun'].map(function(s){
+      return chip(SLOT[s].name,st.slot===s,false,function(){pick(s,false)});
+    }));
+    var ds=dates(st.slot);
+    if(st.date&&!ds.some(function(d){return iso(d)===st.date})) st.date='';
+    fill($('dateChips'),ds.map(function(d){
+      var k=iso(d),busy=st.busy[k+'|'+st.slot];
+      return chip(lab(d)+(busy?' 마감':''),st.date===k,busy,function(){st.date=k;render()});
+    }));
+    if(c.starts.indexOf(st.start)<0) st.start=c.starts[0];
+    $('startField').style.display=c.starts.length>1?'':'none';
+    fill($('startChips'),c.starts.map(function(t){
+      return chip(hh(t),st.start===t,false,function(){st.start=t;render()});
+    }));
+    var hs=[2,3,4,5].filter(function(h){return h<=maxH()});
+    if(hs.indexOf(st.hours)<0) st.hours=Math.min(3,hs[hs.length-1]);
+    fill($('hourChips'),hs.map(function(h){
+      return chip(h+'시간 · '+won(price(st.slot,h)),st.hours===h,false,function(){st.hours=h;render()});
+    }));
+    $('pOut').textContent=st.people+'명';
+    fill($('kindChips'),KINDS.map(function(k){
+      return chip(k,st.kind===k,false,function(){st.kind=(st.kind===k?'':k);render()});
+    }));
+    if(st.date){
+      $('sum1').textContent=lab(fromIso(st.date))+' '+hh(st.start)+'~'+hh(st.start+st.hours)+' · '+st.hours+'시간 · '+st.people+'명';
+      $('sum2').textContent='대관료 '+won(price(st.slot,st.hours));
+    }else{
+      $('sum1').textContent=c.name+' · 날짜를 골라 주세요';
+      $('sum2').textContent='대관료 '+won(price(st.slot,st.hours));
+    }
+  }
+  function pick(s,scroll){
+    st.slot=s;render();
+    if(scroll) $('book').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function body(){
+    var L=['[웨이브랩스 37F 대관 신청]',
+      '날짜: '+lab(fromIso(st.date))+' '+hh(st.start)+'~'+hh(st.start+st.hours)+' ('+st.hours+'시간)',
+      '인원: '+st.people+'명'];
+    if(st.kind) L.push('모임: '+st.kind);
+    L.push('이름: '+$('nm').value.trim());
+    L.push('대관료: '+won(price(st.slot,st.hours))+' (음료 1인 1잔 별도)');
+    var m=$('memo').value.trim(); if(m) L.push('요청: '+m);
+    return L.join('\n');
+  }
+  function openSheet(text,mobile){
+    $('mText').value=text;
+    $('mTitle').textContent=mobile?'문자 앱에서 보내기를 눌러 주세요':'이 내용으로 문자 보내 주세요';
+    $('mDesc').textContent=mobile?'문자 앱이 안 열렸으면 내용을 복사해 '+TEL_SHOW+'로 보내 주세요':TEL_SHOW+'로 보내 주시면 확인 후 확정 문자를 드려요';
+    $('modal').classList.add('show');
+  }
+
+  document.querySelectorAll('[data-pick]').forEach(function(b){
+    b.addEventListener('click',function(){pick(b.getAttribute('data-pick'),true)});
+  });
+  $('pMinus').addEventListener('click',function(){if(st.people>2){st.people--;render()}});
+  $('pPlus').addEventListener('click',function(){if(st.people<30){st.people++;render()}});
+  $('go').addEventListener('click',function(){
+    var e='';
+    if(!st.date) e='날짜를 골라 주세요';
+    else if(!$('nm').value.trim()) e='이름을 적어 주세요';
+    else if(!$('agree').checked) e='이용 규칙에 동의해 주세요';
+    $('err').textContent=e;
+    if(e) return;
+    var text=body();
+    log({src:'대관신청',from:SRC,slot:st.slot,date:st.date,start:st.start,hours:st.hours,people:st.people,type:st.kind||''});
+    var ua=navigator.userAgent;
+    var ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+    var mobile=ios||/Android/i.test(ua);
+    if(mobile){
+      location.href='sms:'+TEL+(ios?'&':'?')+'body='+encodeURIComponent(text);
+      setTimeout(function(){openSheet(text,true)},800);
+    }else openSheet(text,false);
+  });
+  $('mCopy').addEventListener('click',function(){
+    var t=$('mText').value,b=$('mCopy');
+    function ok(){b.textContent='복사했어요'}
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(ok,function(){$('mText').select();document.execCommand('copy');ok()});
+    else{$('mText').select();document.execCommand('copy');ok()}
+  });
+  $('mClose').addEventListener('click',function(){$('modal').classList.remove('show');$('mCopy').textContent='내용 복사'});
+
+  // 방문 기록(같은 창 새로고침은 한 번만) — 광고별 링크는 ?s=이름
+  try{ if(!sessionStorage.getItem('wl_rental')){ sessionStorage.setItem('wl_rental','1'); log({src:SRC}); } }catch(e){ log({src:SRC}); }
+
+  render();
+  fetch('busy.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){
+    (j.busy||[]).forEach(function(b){st.busy[b.d+'|'+b.s]=1});
+    (j.closed||[]).forEach(function(d){st.closed[d]=1});
+    render();
+  }).catch(function(){});
+})();
+</script>
+</body>
+</html>
