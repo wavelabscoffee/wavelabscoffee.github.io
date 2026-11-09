@@ -64,12 +64,12 @@ function leftOf(data){var n=0;(data.items||[]).forEach(function(it){n+=remOf(it)
 
 function card(row){
   var d=row.data,left=leftOf(d),closed=d.closed||left===0;
-  var items=(d.items||[]).map(function(it){
+  var items=(d.items||[]).filter(function(it){return !closed&&remOf(it)>0;}).map(function(it){
     var tot=(it.d||[]).length,rem=closed?0:remOf(it);
     return '<div class="it"><div class="nm"><b>'+E(it.n)+'</b>'+(it.o?'<em>'+E(it.o)+'</em>':'')+'</div>'
-      +'<div class="rem'+(rem===0?' z':'')+'">'+rem+' <small>/ '+tot+'</small></div></div>';
+      +'<div class="rem'+(rem===0?' z':'')+'">'+rem+'<small>개</small></div></div>';
   }).join('');
-  var memos=(d.memos||[]).map(function(m){return '<div>· '+E(m.t)+'</div>';}).join('');
+  var memos='';
   return '<div class="pc'+(closed?' done':'')+'">'
     +'<div class="ph"><b>'+E(ymd(d.at||row.at))+' 선결제</b>'
     +'<span class="badge'+(closed?' ok':'')+'">'+(closed?'다 쓰셨어요':'남은 '+left+'개')+'</span></div>'
@@ -88,7 +88,7 @@ function render(name,rows){
   if(!rows.length){ h+='<div class="msg">등록된 선결제 내역이 없어요.</div>'; }
   else{
     if(open.length){ h+='<h2>진행 중</h2>'+open.map(card).join(''); }
-    if(done.length){ h+='<h2>다 쓰신 내역</h2>'+done.map(card).join(''); }
+
   }
   h+='<div class="foot">주문은 키오스크에서, 픽업 때 이 화면을 보여 주세요.<br>문의 010-8406-8985</div>';
   document.getElementById("app").innerHTML=h;
