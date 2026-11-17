@@ -81,7 +81,7 @@ function render(name,rows){
   var open=[],done=[],total=0;
   rows.forEach(function(r){ var l=leftOf(r.data); total+=l;
     (r.data.closed||l===0?done:open).push(r); });
-  var h='<div class="hero"><div class="who">'+E(name)+'님</div>'
+  var h='<div class="hero"><div class="who">웨이브랩스 선결제</div>'
     +'<div class="big">'+total+'<small> 개 남음</small></div>'
     +'<div class="sub">남은 선결제 음료·메뉴예요</div>'
     +'<button class="refresh" onclick="load()">새로고침</button></div>';
@@ -97,12 +97,12 @@ function render(name,rows){
 function load(){
   if(!cid){document.getElementById("app").innerHTML='<div class="msg">링크가 올바르지 않아요.<br>매장에서 받은 링크로 다시 열어 주세요.</div>';return;}
   Promise.all([
-    fetch(SUPA+"?kind=eq.cust&id=eq."+encodeURIComponent(cid)+"&select=data",{headers:hdr()}).then(function(r){return r.json();}),
+    fetch(SUPA+"?kind=eq.cust&id=eq."+encodeURIComponent(cid)+"&select=id",{headers:hdr()}).then(function(r){return r.json();}),
     fetch(SUPA+"?kind=eq.prepay&data->>cid=eq."+encodeURIComponent(cid)+"&select=data,at&order=at.desc",{headers:hdr()}).then(function(r){return r.json();})
   ]).then(function(res){
     var cust=res[0],pre=res[1];
     if(!cust||!cust.length){document.getElementById("app").innerHTML='<div class="msg">내역을 찾지 못했어요.<br>매장에 문의해 주세요. 010-8406-8985</div>';return;}
-    render((cust[0].data&&cust[0].data.n)||"고객",pre||[]);
+    render("",pre||[]);
   }).catch(function(){
     document.getElementById("app").innerHTML='<div class="msg">잠시 불러오지 못했어요.<br><button class="refresh" onclick="load()">다시 시도</button></div>';
   });
