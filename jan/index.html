@@ -81,10 +81,7 @@ function render(name,rows){
   var open=[],done=[],total=0;
   rows.forEach(function(r){ var l=leftOf(r.data); total+=l;
     (r.data.closed||l===0?done:open).push(r); });
-  var h='<div class="hero"><div class="who">웨이브랩스 선결제</div>'
-    +'<div class="big">'+total+'<small> 개 남음</small></div>'
-    +'<div class="sub">남은 선결제 음료·메뉴예요</div>'
-    +'<button class="refresh" onclick="load()">새로고침</button></div>';
+  var h='';
   if(!rows.length){ h+='<div class="msg">등록된 선결제 내역이 없어요.</div>'; }
   else{
     if(open.length){ h+='<h2>진행 중</h2>'+open.map(card).join(''); }
